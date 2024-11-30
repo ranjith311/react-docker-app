@@ -13,6 +13,7 @@ services:
       - "3000:3000"
     environment:
       - CHOKIDAR_USEPOLLING=true # Enables file watching on some systems
+      - WATCHPACK_POLLING=true
     command: npm start
 
   prod:
